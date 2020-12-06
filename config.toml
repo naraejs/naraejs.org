@@ -1,5 +1,5 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
+baseURL = "https://naraejs.org/"
+languageCode = "ko-kr"
 title = "Narae.js"
 theme = "hugo-geekdoc"
 
