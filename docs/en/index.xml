@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Narae.js</title>
-    <link>http://example.org/en/</link>
+    <link>https://naraejs.org/en/</link>
     <description>Recent content on Narae.js</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 04 Dec 2020 21:26:24 +0900</lastBuildDate><atom:link href="http://example.org/en/index.xml" rel="self" type="application/rss+xml" />
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 04 Dec 2020 21:26:24 +0900</lastBuildDate><atom:link href="https://naraejs.org/en/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

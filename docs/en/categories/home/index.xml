@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>home on Narae.js</title>
-    <link>http://example.org/en/categories/home/</link>
+    <link>https://naraejs.org/en/categories/home/</link>
     <description>Recent content in home on Narae.js</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 04 Dec 2020 21:26:24 +0900</lastBuildDate><atom:link href="http://example.org/en/categories/home/index.xml" rel="self" type="application/rss+xml" />
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 04 Dec 2020 21:26:24 +0900</lastBuildDate><atom:link href="https://naraejs.org/en/categories/home/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Narae.js</title>
-      <link>http://example.org/en/</link>
+      <link>https://naraejs.org/en/</link>
       <pubDate>Fri, 04 Dec 2020 21:26:24 +0900</pubDate>
       
-      <guid>http://example.org/en/</guid>
+      <guid>https://naraejs.org/en/</guid>
       <description>narae.js is a node.js open source framework based on bean.ts for the purpose of control inversion (IoC),
 README Languages  English (this) Korean  Name &amp;ldquo;Narae&amp;rdquo; is a literary expression in pure Korean, meaning &amp;ldquo;wing&amp;rdquo;. It gives wings to developing by reducing unnecessary development and allowing more focus on business logic.
 Features Dependency Injection = DI

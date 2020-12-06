@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Team on Narae.js</title>
-    <link>http://example.org/ko/categories/Team/</link>
+    <link>https://naraejs.org/ko/categories/Team/</link>
     <description>Recent content in Team on Narae.js</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 04 Dec 2020 21:26:24 +0900</lastBuildDate><atom:link href="http://example.org/ko/categories/Team/index.xml" rel="self" type="application/rss+xml" />
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 04 Dec 2020 21:26:24 +0900</lastBuildDate><atom:link href="https://naraejs.org/ko/categories/Team/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Team</title>
-      <link>http://example.org/ko/team/</link>
+      <link>https://naraejs.org/ko/team/</link>
       <pubDate>Fri, 04 Dec 2020 21:26:24 +0900</pubDate>
       
-      <guid>http://example.org/ko/team/</guid>
+      <guid>https://naraejs.org/ko/team/</guid>
       <description>#team_members .item_box {margin-bottom: 16px;}#team_members .name {font-weight: bold;}#team_members .second {display: flex;}#team_members .second .icon {width: 64px;height: 64px;border-radius: 50%;background: #333;text-align: center;line-height: 64px;color: #fff;font-weight: bold;font-size: 1.6em;}#team_members .second .details {}#team_members .second .details table {border: hidden !important;margin: 0 !important;margin-left: 16px !important;}#team_members .second .details tr {border: hidden !important;}#team_members .</description>
     </item>
     

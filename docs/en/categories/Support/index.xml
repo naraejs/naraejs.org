@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Support on Narae.js</title>
-    <link>http://example.org/en/categories/Support/</link>
+    <link>https://naraejs.org/en/categories/Support/</link>
     <description>Recent content in Support on Narae.js</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 04 Dec 2020 21:26:24 +0900</lastBuildDate><atom:link href="http://example.org/en/categories/Support/index.xml" rel="self" type="application/rss+xml" />
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 04 Dec 2020 21:26:24 +0900</lastBuildDate><atom:link href="https://naraejs.org/en/categories/Support/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Support Narae.js</title>
-      <link>http://example.org/en/support-naraejs/</link>
+      <link>https://naraejs.org/en/support-naraejs/</link>
       <pubDate>Fri, 04 Dec 2020 21:26:24 +0900</pubDate>
       
-      <guid>http://example.org/en/support-naraejs/</guid>
+      <guid>https://naraejs.org/en/support-naraejs/</guid>
       <description>Narae.js is an Apache-2.0 licensed open source project and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support Narae.js development via the following methods:
 One-time Donations .donation_paypal:hover {background-color: #ddd;}</description>
     </item>
