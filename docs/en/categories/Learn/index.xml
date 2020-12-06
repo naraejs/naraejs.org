@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learn on Narae.js</title>
+    <link>http://example.org/en/categories/Learn/</link>
+    <description>Recent content in Learn on Narae.js</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Dec 2020 21:26:24 +0900</lastBuildDate><atom:link href="http://example.org/en/categories/Learn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learn</title>
+      <link>http://example.org/en/learn/</link>
+      <pubDate>Fri, 04 Dec 2020 21:26:24 +0900</pubDate>
+      
+      <guid>http://example.org/en/learn/</guid>
+      <description>This page has not yet been translated.
+배우기!</description>
+    </item>
+    
+  </channel>
+</rss>
