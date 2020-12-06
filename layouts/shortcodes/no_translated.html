@@ -1,0 +1,8 @@
+{{ $defFile := printf "%s%s.md" .Page.File.Dir .Page.File.TranslationBaseName }}
+{{ $file := $defFile | readFile }}
+{{ $out := replaceRE "^---\\s*\n([^-][^\\n]+\\n)+---\\s*" "" $file 1 }}
+
+*This page has not yet been translated.*
+
+<!--{{ $out | markdownify }}-->
+{{ replaceRE "'" "'" $out }}

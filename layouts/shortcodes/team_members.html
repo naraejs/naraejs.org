@@ -1,0 +1,124 @@
+<style>
+    #team_members .item_box {
+        margin-bottom: 16px;
+    }
+
+    #team_members .name {
+        font-weight: bold;
+    }
+
+    #team_members .second {
+        display: flex;
+    }
+
+    #team_members .second .icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: #333;
+        text-align: center;
+        line-height: 64px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+
+    #team_members .second .details {
+
+    }
+
+    #team_members .second .details table {
+        border: hidden !important;
+        margin: 0 !important;
+        margin-left: 16px !important;
+    }
+
+    #team_members .second .details tr {
+        border: hidden !important;
+    }
+
+    #team_members .second .details td {
+        border: hidden !important;
+        padding: 0 !important;
+    }
+
+    #team_members .second .details a:link { color: inherit !important; text-decoration: none;}
+    #team_members .second .details a:visited { color: inherit !important; text-decoration: none;}
+    #team_members .second .details a:hover { color: inherit !important; text-decoration: underline;}
+</style>
+<div id="team_members">
+    <div class="item_box" v-for="(item, index) in memberList" :key="'member-item-' + index">
+        <div class="name" v-text="localedText(item.name)">
+        </div>
+        <div class="second">
+            <div class="icon" v-text="localedText(item.name).substr(0, 1)">
+            </div>
+            <div class="details">
+                <table border="0" style="border: hidden !important; border-collapse: collapse;">
+                    <tr v-if="item.attributes" v-for="(attr, attrindex) in item.attributes" :key="'ma-' + index + '-' + attrindex">
+                        <td v-html="attr.icon"></td>
+                        <td>&nbsp;</td>
+                        <td v-if="attr.name" v-text="attr.name"></td>
+                        <td v-if="attr.name">&nbsp;&nbsp;&nbsp;</td>
+                        <td v-if="attr.value" v-text="attr.value"></td>
+                        <td v-if="attr.html" v-html="attr.html"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  var team_members = new Vue({
+    el: '#team_members',
+    methods: {
+      localedText: function (item) {
+        var out;
+        if (typeof item === 'string') {
+          return item;
+        }
+        out = item[this.currentLocale];
+        if (out) {
+          return out;
+        }
+        for (var i=0; i<this.defaultLocales.length; i++) {
+          out = item[this.defaultLocales[i]];
+          if (out) {
+            return out;
+          }
+        }
+        return '';
+      }
+    },
+    data: {
+      currentLocale: "{{ .Page.Lang }}",
+      defaultLocales: ['en', 'ko'],
+      memberList: [
+        {
+          name: {
+            en: "Joseph Lee",
+            ko: "Joseph Lee"
+          },
+          attributes: [
+            {
+              icon: '<i class="fas fa-envelope"></i>',
+              value: "joseph@jc-lab.net"
+            },
+            {
+              icon: '<i class="fas fa-map-marker-alt"></i>',
+              value: "Seoul, South Korea"
+            },
+            {
+              icon: '<i class="fas fa-link"></i>',
+              html: "<a href=\"https://jsty.tistory.com\">https://jsty.tistory.com</a>"
+            },
+            {
+              icon: '<i class="fab fa-github"></i>',
+              html: "<a href=\"https://github.com/jc-lab\">jc-lab</a>"
+            }
+          ]
+        }
+      ]
+    }
+  })
+</script>
