@@ -17,6 +17,12 @@ narae.js is a node.js open source framework based on [bean.ts](https://github.co
 
 "Narae" is a literary expression in pure Korean, meaning "wing". It gives wings to developing by reducing unnecessary development and allowing more focus on business logic.
 
+## Installation
+
+```bash
+$ npm install --save @naraejs/core
+```
+
 # Features
 
 ## Dependency Injection
