@@ -3,32 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://naraejs.org/en/eco-system/webserver-express/</loc>
+    <loc>https://naraejs.org/en/eco-system/core/</loc>
     <lastmod>2020-12-05T02:53:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://naraejs.org/ko/eco-system/webserver-express/"
+                href="https://naraejs.org/ko/eco-system/core/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://naraejs.org/en/eco-system/webserver-express/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://naraejs.org/en/eco-system/webserver-serverless/</loc>
-    <lastmod>2020-12-05T02:53:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://naraejs.org/ko/eco-system/webserver-serverless/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://naraejs.org/en/eco-system/webserver-serverless/"
+                href="https://naraejs.org/en/eco-system/core/"
                 />
   </url>
   
@@ -48,6 +33,21 @@
   </url>
   
   <url>
+    <loc>https://naraejs.org/en/eco-system/webserver-express/</loc>
+    <lastmod>2020-12-05T02:53:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://naraejs.org/ko/eco-system/webserver-express/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://naraejs.org/en/eco-system/webserver-express/"
+                />
+  </url>
+  
+  <url>
     <loc>https://naraejs.org/en/eco-system/</loc>
     <lastmod>2020-12-04T21:26:24+09:00</lastmod>
     <xhtml:link
@@ -59,6 +59,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://naraejs.org/en/eco-system/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://naraejs.org/en/eco-system/webserver-serverless/</loc>
+    <lastmod>2020-12-05T02:53:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://naraejs.org/ko/eco-system/webserver-serverless/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://naraejs.org/en/eco-system/webserver-serverless/"
                 />
   </url>
   

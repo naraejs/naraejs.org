@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="webserver-express">
+<meta name="description" content="core">
 
-<title>webserver-express | Narae.js</title>
+<title>core | Narae.js</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -33,7 +33,7 @@
 <link rel="preload" href="/custom.css" as="style">
 <link rel="stylesheet" href="/custom.css" media="all">
 
-<link rel="alternate" type="application/rss+xml" href="https://naraejs.org/en/eco-system/webserver-express/index.xml" title="Narae.js" />
+<link rel="alternate" type="application/rss+xml" href="https://naraejs.org/ko/eco-system/core/index.xml" title="Narae.js" />
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
 <script src="/js/vue.min.js"></script>
@@ -120,7 +120,7 @@ a.no-color-anker:active {
             
             
                 <span class="flex">
-                    <a href="/en/learn/" class="gdoc-nav__entry ">
+                    <a href="/ko/learn/" class="gdoc-nav__entry ">
                         Learn
                     </a>
                 </span>
@@ -167,7 +167,7 @@ a.no-color-anker:active {
             
             
                 <span class="flex">
-                    <a href="/en/eco-system/core/" class="gdoc-nav__entry ">
+                    <a href="/ko/eco-system/core/" class="gdoc-nav__entry is-active">
                         core
                     </a>
                 </span>
@@ -192,7 +192,7 @@ a.no-color-anker:active {
             
             
                 <span class="flex">
-                    <a href="/en/eco-system/webserver-express/" class="gdoc-nav__entry is-active">
+                    <a href="/ko/eco-system/webserver-express/" class="gdoc-nav__entry ">
                         webserver-express
                     </a>
                 </span>
@@ -217,7 +217,7 @@ a.no-color-anker:active {
             
             
                 <span class="flex">
-                    <a href="/en/eco-system/webserver-serverless/" class="gdoc-nav__entry ">
+                    <a href="/ko/eco-system/webserver-serverless/" class="gdoc-nav__entry ">
                         webserver-serverless
                     </a>
                 </span>
@@ -249,7 +249,7 @@ a.no-color-anker:active {
             
             
                 <span class="flex">
-                    <a href="/en/team/" class="gdoc-nav__entry ">
+                    <a href="/ko/team/" class="gdoc-nav__entry ">
                         Team
                     </a>
                 </span>
@@ -274,8 +274,8 @@ a.no-color-anker:active {
             
             
                 <span class="flex">
-                    <a href="/en/support-naraejs/" class="gdoc-nav__entry ">
-                        Support Narae.js
+                    <a href="/ko/support-naraejs/" class="gdoc-nav__entry ">
+                        Narae.js 개발 후원
                     </a>
                 </span>
             
@@ -353,7 +353,7 @@ a.no-color-anker:active {
         
     
     
-        <a href='/en/'>Narae.js</a> / <a href='/en/eco-system/'>Eco System</a> / webserver-express
+        <a href='/ko/'>Narae.js</a> / <a href='/ko/eco-system/'>Eco System</a> / core
     
 
     
@@ -367,7 +367,7 @@ a.no-color-anker:active {
         
         <span class="editpage">
             <svg class="icon code"><use xlink:href="#code"></use></svg>
-            <a href="https://github.com/thegeeklab/hugo/edit/master/exampleSite/content/eco-system%5cwebserver-express%5c_index.en.md">
+            <a href="https://github.com/thegeeklab/hugo/edit/master/exampleSite/content/eco-system%5ccore%5c_index.md">
                 Edit this page
             </a>
         </span>
@@ -376,7 +376,7 @@ a.no-color-anker:active {
 </div>
 
     <article class="gdoc-markdown">
-        <h1>webserver-express</h1>
+        <h1>core</h1>
         
 
 
@@ -384,18 +384,12 @@ a.no-color-anker:active {
     
 
 
-<p><em>This page has not yet been translated.</em></p>
-<p>&lt;div class=&quot;no-color-anker&quot; style=&quot;font-size: 1.5em&quot;&gt;
-&lt;a href=&quot;https://github.com/naraejs/naraejs&quot;&gt;&lt;i class=&quot;fab fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;https://www.npmjs.com/package/@naraejs/webserver-express&quot;&gt;&lt;img src=&quot;https://img.shields.io/npm/v/@naraejs/webserver-express.svg&quot; /&gt;&lt;/a&gt;
-&lt;/div&gt;</p>
+<div class="no-color-anker" style="font-size: 1.5em">
+    <a href="https://github.com/naraejs/naraejs"><i class="fab fa-github"></i></a>
+    <a href="https://www.npmjs.com/package/@naraejs/core"><img src="https://img.shields.io/npm/v/@naraejs/core.svg" /></a>
+</div>
 <h1 id="installation">Installation</h1>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ npm install --save @naraejs/webserver-express
-</code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="basic-code">Basic Code<a data-clipboard-text="https://naraejs.org/en/eco-system/webserver-express/#basic-code" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Basic Code" href="#basic-code"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="kr">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">naraejs</span> <span class="kr">from</span> <span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="kd">@naraejs</span><span class="o">/</span><span class="nx">core</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;;</span>
-<span class="kr">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">webserverExpress</span> <span class="kr">from</span> <span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="kd">@naraejs</span><span class="o">/</span><span class="nx">webserver</span><span class="o">-</span><span class="nx">express</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;;</span>
-
-<span class="nx">naraejs</span><span class="p">.</span><span class="nx">install</span><span class="p">(</span><span class="nx">webserverExpress</span><span class="p">);</span>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ npm install --save @naraejs/core
 </code></pre></div>
 
     </article>
@@ -450,7 +444,7 @@ a.no-color-anker:active {
             
             
             
-            <option id="ko" value="https://naraejs.org/ko/eco-system/webserver-express/">Korean</option>
+            <option id="ko" value="https://naraejs.org/ko/eco-system/core/" selected>Korean</option>
             
             
             
@@ -464,7 +458,7 @@ a.no-color-anker:active {
             
             
             
-            <option id="en" value="https://naraejs.org/en/eco-system/webserver-express/" selected>English</option>
+            <option id="en" value="https://naraejs.org/en/eco-system/core/">English</option>
             
             
             
@@ -480,7 +474,7 @@ a.no-color-anker:active {
 
 
 
-<script defer src="/js/en.search.min.6ad98ee50bb4b0ef42ef908b0f18143d394ae7e810f8e0a387ba314123b09c41.js"></script>
+<script defer src="/js/ko.search.min.75232900c0eb0df075f558b00d2ea6fa7e2e78975e6d9a8ecfc80b67a220405b.js"></script>
 
 
 

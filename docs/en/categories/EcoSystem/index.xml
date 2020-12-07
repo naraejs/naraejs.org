@@ -8,23 +8,25 @@
     <language>ko-kr</language>
     <lastBuildDate>Sat, 05 Dec 2020 02:53:00 +0900</lastBuildDate><atom:link href="https://naraejs.org/en/categories/EcoSystem/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>core</title>
+      <link>https://naraejs.org/en/eco-system/core/</link>
+      <pubDate>Sat, 05 Dec 2020 02:53:00 +0900</pubDate>
+      
+      <guid>https://naraejs.org/en/eco-system/core/</guid>
+      <description>This page has not yet been translated.
+&amp;lt;div class=&amp;quot;no-color-anker&amp;quot; style=&amp;quot;font-size: 1.5em&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;https://github.com/naraejs/naraejs&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fab fa-github&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://www.npmjs.com/package/@naraejs/core&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;https://img.shields.io/npm/v/@naraejs/core.svg&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt;
+Installation $ npm install --save @naraejs/core </description>
+    </item>
+    
+    <item>
       <title>webserver-express</title>
       <link>https://naraejs.org/en/eco-system/webserver-express/</link>
       <pubDate>Sat, 05 Dec 2020 02:53:00 +0900</pubDate>
       
       <guid>https://naraejs.org/en/eco-system/webserver-express/</guid>
       <description>This page has not yet been translated.
-Installation Npm Install $ npm install --save @naraejs/webserver-express Basic Code import * as naraejs from &amp;amp;#39;@naraejs/core&amp;amp;#39;; import * as webserverExpress from &amp;amp;#39;@naraejs/webserver-express&amp;amp;#39;; naraejs.install(webserverExpress); </description>
-    </item>
-    
-    <item>
-      <title>webserver-serverless</title>
-      <link>https://naraejs.org/en/eco-system/webserver-serverless/</link>
-      <pubDate>Sat, 05 Dec 2020 02:53:00 +0900</pubDate>
-      
-      <guid>https://naraejs.org/en/eco-system/webserver-serverless/</guid>
-      <description>This page has not yet been translated.
-Installation Npm Install $ npm install --save @naraejs/webserver-serverless Basic Code import * as naraejs from &amp;amp;#39;@naraejs/core&amp;amp;#39;; import * as webserverExpress from &amp;amp;#39;@naraejs/webserver-express&amp;amp;#39;; import * as webserverServerless from &amp;amp;#39;@naraejs/webserver-serverless&amp;amp;#39;; naraejs.install(webserverExpress); naraejs.install(webserverServerless); /** * YOU MUST CALL createHandler BEFORE narae.js START */ const app = naraejs.create(); const handler = webserverServerless.createHandler(app, webserverServerless.ServerlessPlatform.KUBELESS); app.start(); export { handler }; Supported Serverless Platforms Auto const handler = webserverServerless.createHandler(app, webserverServerless.ServerlessPlatform.AUTO);  AWS Lambda : LAMBDA_TASK_ROOT Environment가 있는지 확인합니다.</description>
+&amp;lt;div class=&amp;quot;no-color-anker&amp;quot; style=&amp;quot;font-size: 1.5em&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;https://github.com/naraejs/naraejs&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fab fa-github&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://www.npmjs.com/package/@naraejs/webserver-express&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;https://img.shields.io/npm/v/@naraejs/webserver-express.svg&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt;
+Installation $ npm install --save @naraejs/webserver-express Basic Code import * as naraejs from &amp;amp;#39;@naraejs/core&amp;amp;#39;; import * as webserverExpress from &amp;amp;#39;@naraejs/webserver-express&amp;amp;#39;; naraejs.install(webserverExpress); </description>
     </item>
     
     <item>
@@ -34,6 +36,17 @@ Installation Npm Install $ npm install --save @naraejs/webserver-serverless Basi
       
       <guid>https://naraejs.org/en/eco-system/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>webserver-serverless</title>
+      <link>https://naraejs.org/en/eco-system/webserver-serverless/</link>
+      <pubDate>Sat, 05 Dec 2020 02:53:00 +0900</pubDate>
+      
+      <guid>https://naraejs.org/en/eco-system/webserver-serverless/</guid>
+      <description>This page has not yet been translated.
+&amp;lt;div class=&amp;quot;no-color-anker&amp;quot; style=&amp;quot;font-size: 1.5em&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;https://github.com/naraejs/naraejs&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fab fa-github&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://www.npmjs.com/package/@naraejs/webserver-serverless&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;https://img.shields.io/npm/v/@naraejs/webserver-serverless.svg&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt;
+Installation $ npm install --save @naraejs/webserver-serverless Basic Code import * as naraejs from &amp;amp;#39;@naraejs/core&amp;amp;#39;; import * as webserverExpress from &amp;amp;#39;@naraejs/webserver-express&amp;amp;#39;; import * as webserverServerless from &amp;amp;#39;@naraejs/webserver-serverless&amp;amp;#39;; naraejs.install(webserverExpress); naraejs.install(webserverServerless); /** * YOU MUST CALL createHandler BEFORE narae.js START */ const app = naraejs.create(); const handler = webserverServerless.createHandler(app, webserverServerless.ServerlessPlatform.KUBELESS); app.start(); export { handler }; Supported Serverless Platforms Auto const handler = webserverServerless.</description>
     </item>
     
   </channel>

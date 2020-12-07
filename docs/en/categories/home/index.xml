@@ -15,10 +15,9 @@
       <guid>https://naraejs.org/en/</guid>
       <description>narae.js is a node.js open source framework based on bean.ts for the purpose of control inversion (IoC),
 README Languages  English (this) Korean  Name &amp;ldquo;Narae&amp;rdquo; is a literary expression in pure Korean, meaning &amp;ldquo;wing&amp;rdquo;. It gives wings to developing by reducing unnecessary development and allowing more focus on business logic.
-Features Dependency Injection = DI
+Installation $ npm install --save @naraejs/core Features Dependency Injection = DI
 Dependency injection is supported through bean.ts.
-Inversion of Control = IoC
-There are still many things that are not enough to say that it is a complete IoC.</description>
+Inversion of Control = IoC</description>
     </item>
     
   </channel>
