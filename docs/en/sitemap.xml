@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://naraejs.org/en/learn/stereotypes/component/</loc>
+    <lastmod>2020-12-05T02:53:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://naraejs.org/ko/learn/stereotypes/component/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://naraejs.org/en/learn/stereotypes/component/"
+                />
+  </url>
+  
+  <url>
     <loc>https://naraejs.org/en/eco-system/core/</loc>
     <lastmod>2020-12-05T02:53:00+09:00</lastmod>
     <xhtml:link
@@ -14,6 +29,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://naraejs.org/en/eco-system/core/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://naraejs.org/en/learn/stereotypes/</loc>
+    <lastmod>2020-12-05T02:53:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://naraejs.org/ko/learn/stereotypes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://naraejs.org/en/learn/stereotypes/"
                 />
   </url>
   
@@ -63,6 +93,51 @@
   </url>
   
   <url>
+    <loc>https://naraejs.org/en/learn/stereotypes/module/</loc>
+    <lastmod>2020-12-05T02:53:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://naraejs.org/ko/learn/stereotypes/module/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://naraejs.org/en/learn/stereotypes/module/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://naraejs.org/en/learn/stereotypes/configuration/</loc>
+    <lastmod>2020-12-05T02:53:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://naraejs.org/ko/learn/stereotypes/configuration/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://naraejs.org/en/learn/stereotypes/configuration/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://naraejs.org/en/learn/stereotypes/connection_manager/</loc>
+    <lastmod>2020-12-05T02:53:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://naraejs.org/ko/learn/stereotypes/connection_manager/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://naraejs.org/en/learn/stereotypes/connection_manager/"
+                />
+  </url>
+  
+  <url>
     <loc>https://naraejs.org/en/eco-system/webserver-serverless/</loc>
     <lastmod>2020-12-05T02:53:00+09:00</lastmod>
     <xhtml:link
@@ -89,6 +164,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://naraejs.org/en/team/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://naraejs.org/en/learn/stereotypes/service/</loc>
+    <lastmod>2020-12-05T02:53:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://naraejs.org/ko/learn/stereotypes/service/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://naraejs.org/en/learn/stereotypes/service/"
                 />
   </url>
   
@@ -138,6 +228,36 @@
   </url>
   
   <url>
+    <loc>https://naraejs.org/en/categories/Learn/</loc>
+    <lastmod>2020-12-05T02:53:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://naraejs.org/ko/categories/Learn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://naraejs.org/en/categories/Learn/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://naraejs.org/en/categories/StereoTypeAnnotations/</loc>
+    <lastmod>2020-12-05T02:53:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://naraejs.org/ko/categories/StereoTypeAnnotations/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://naraejs.org/en/categories/StereoTypeAnnotations/"
+                />
+  </url>
+  
+  <url>
     <loc>https://naraejs.org/en/categories/home/</loc>
     <lastmod>2020-12-04T21:26:24+09:00</lastmod>
     <xhtml:link
@@ -149,21 +269,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://naraejs.org/en/categories/home/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://naraejs.org/en/categories/Learn/</loc>
-    <lastmod>2020-12-04T21:26:24+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://naraejs.org/ko/categories/Learn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://naraejs.org/en/categories/Learn/"
                 />
   </url>
   

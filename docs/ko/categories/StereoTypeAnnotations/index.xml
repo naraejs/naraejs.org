@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>StereoTypeAnnotations on Narae.js</title>
+    <link>https://naraejs.org/ko/categories/StereoTypeAnnotations/</link>
+    <description>Recent content in StereoTypeAnnotations on Narae.js</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 05 Dec 2020 02:53:00 +0900</lastBuildDate><atom:link href="https://naraejs.org/ko/categories/StereoTypeAnnotations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>@Component</title>
+      <link>https://naraejs.org/ko/learn/stereotypes/component/</link>
+      <pubDate>Sat, 05 Dec 2020 02:53:00 +0900</pubDate>
+      
+      <guid>https://naraejs.org/ko/learn/stereotypes/component/</guid>
+      <description>Description 특별한 기능은 없는 Singletone Bean Object를 만들기 위해 사용합니다.
+Usage import { installer, Component } from &amp;#39;@naraejs/core&amp;#39; @Component() class MyComponent { } export default installer; </description>
+    </item>
+    
+    <item>
+      <title>@Module</title>
+      <link>https://naraejs.org/ko/learn/stereotypes/module/</link>
+      <pubDate>Sat, 05 Dec 2020 02:53:00 +0900</pubDate>
+      
+      <guid>https://naraejs.org/ko/learn/stereotypes/module/</guid>
+      <description>Description Module를 만들 때 사용합니다.
+Module 만들기 import { INaraeCore, Module } from &amp;#39;@naraejs/core&amp;#39; const S_MyModule = Symbol(&amp;#39;MyModule&amp;#39;); @Module() export class MyModule { private _core!: INaraeCore; constructor() { makeToModule(S_MyModule, this) .order(0) .start((core: INaraeCore) =&amp;gt; { // START Handler  this._core = core; }) .stop(() =&amp;gt; { // STOP Handler  }) .build(); } } </description>
+    </item>
+    
+    <item>
+      <title>@Configuration</title>
+      <link>https://naraejs.org/ko/learn/stereotypes/configuration/</link>
+      <pubDate>Sat, 05 Dec 2020 02:53:00 +0900</pubDate>
+      
+      <guid>https://naraejs.org/ko/learn/stereotypes/configuration/</guid>
+      <description>Description 단독으로 보통 사용되진 않으며 다른 Module과 함께 작동합니다.
+Usage import { installer, Configuration } from &amp;#39;@naraejs/core&amp;#39; @Configuration() class MyConfiguration { } export default installer; Configuration 만들기 webserver-express의 소스 참고</description>
+    </item>
+    
+    <item>
+      <title>@ConnectionManager</title>
+      <link>https://naraejs.org/ko/learn/stereotypes/connection_manager/</link>
+      <pubDate>Sat, 05 Dec 2020 02:53:00 +0900</pubDate>
+      
+      <guid>https://naraejs.org/ko/learn/stereotypes/connection_manager/</guid>
+      <description>Usage import { installer, ConnectionManager, IConnectionManagerHandler } from &amp;#39;@naraejs/core&amp;#39; @ConnectionManager() class RedisConnectionManager implements IConnectionManagerHandler { public get name(): string { return &amp;#39;redis&amp;#39;; } public get essential(): boolean { // false이면 해당 ConnectionManager의 Health가 DOWN이라도  // 전체 Health Check에서 DOWN을 반환하진 않습니다.  return true; } public healthCheck(): Promise&amp;lt;any&amp;gt; { return Promise.resolve(); // Health is UP  // or  return Promise.reject(...); // Health is DOWN  } } export default installer; </description>
+    </item>
+    
+    <item>
+      <title>@Service</title>
+      <link>https://naraejs.org/ko/learn/stereotypes/service/</link>
+      <pubDate>Sat, 05 Dec 2020 02:53:00 +0900</pubDate>
+      
+      <guid>https://naraejs.org/ko/learn/stereotypes/service/</guid>
+      <description>Usage import { installer, Service } from &amp;#39;@naraejs/core&amp;#39; @Service() class MyService { } export default installer; </description>
+    </item>
+    
+  </channel>
+</rss>
