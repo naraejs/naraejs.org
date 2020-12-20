@@ -3,6 +3,8 @@ languageCode = "ko-kr"
 title = "Narae.js"
 theme = "hugo-geekdoc"
 
+googleAnalytics = "G-ZN3E8CRZVK"
+
 defaultContentLanguage = "ko"
 defaultContentLanguageInSubdir = true
 IsMultiLingual = false
@@ -58,7 +60,7 @@ enableGitInfo = false
   # (Optional, default none) Enable 'Edit this page' links. Requires 'GeekdocRepo' param
   # and path must point to 'content' directory of repo.
   # You can also specify this parameter per page in front matter.
-  geekdocEditPath = "edit/master/exampleSite/content"
+  geekdocEditPath = "edit/master/content"
 
   # (Optional, default true) Enables search function with flexsearch.
   # Index is built on the fly and might slowdown your website.
