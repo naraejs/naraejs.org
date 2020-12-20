@@ -3,6 +3,8 @@ languageCode = "ko-kr"
 title = "Narae.js"
 theme = "hugo-geekdoc"
 
+googleAnalytics = "G-ZN3E8CRZVK"
+
 defaultContentLanguage = "ko"
 defaultContentLanguageInSubdir = true
 IsMultiLingual = false
