@@ -7,5 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sat, 05 Dec 2020 02:53:00 +0900</lastBuildDate><atom:link href="https://naraejs.org/en/learn/stereotypes/connection_manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Transaction</title>
+      <link>https://naraejs.org/en/learn/stereotypes/connection_manager/transaction/</link>
+      <pubDate>Sun, 20 Dec 2020 02:53:00 +0900</pubDate>
+      
+      <guid>https://naraejs.org/en/learn/stereotypes/connection_manager/transaction/</guid>
+      <description>This page has not yet been translated.
+@Transaction 어노테이션을 메서드에 적용함으로써 자동화된 Transaction 처리가 가능합니다.
+트랜잭션을 지원하려면 ConnectionManager에서 transactional가 true이어야 하며 커넥션에서 ITransactionalConnection을 구현해야 합니다.
+반드시 @Transactional 메서드 내에서 getConnection을 호출해야 하며, 중첩된 @Transactional 사용시 트랜잭션이 전파됩니다.
+Example:
+@Service() class TestService { private _testCM: TestCM; constructor(@Inject(TestCM) testCM: TestCM) { this._testCM = testCM; } @Transactional() public methodB(a: number): Promise&amp;amp;lt;void&amp;amp;gt; { return this._testCM.getConnection() .then((connection) =&amp;amp;gt; { connection.insert(&amp;amp;#39;THIRD&amp;amp;#39;); connection.insert(&amp;amp;#39;FOURTH&amp;amp;#39;); }); } @Transactional() public methodA(a: number): Promise&amp;amp;lt;void&amp;amp;gt; { return this.</description>
+    </item>
+    
   </channel>
 </rss>

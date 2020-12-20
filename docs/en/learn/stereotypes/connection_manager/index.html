@@ -38,6 +38,18 @@
 
 <script src="/js/vue.min.js"></script>
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZN3E8CRZVK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZN3E8CRZVK');
+</script>
+
+
+
 <style>
 .no-color-anker a {
   color: inherit;
@@ -147,7 +159,7 @@ a.no-color-anker:active {
             
                 <span class="flex">
                     <a href="/en/learn/stereotypes/" class="gdoc-nav__entry ">
-                        Stereo Type Annotations
+                        Stereo Types
                     </a>
                 </span>
             
@@ -255,6 +267,39 @@ a.no-color-anker:active {
             
 
             
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/en/learn/stereotypes/connection_manager/transaction/" class="gdoc-nav__entry ">
+                        Transaction
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
             </li>
             
             
@@ -285,6 +330,31 @@ a.no-color-anker:active {
             
         
     </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/en/learn/logging/" class="gdoc-nav__entry ">
+                        Logging
+                    </a>
+                </span>
+            
+            
 
             
             </li>
@@ -524,7 +594,7 @@ a.no-color-anker:active {
         
     
     
-        <a href='/en/'>Narae.js</a> / <a href='/en/learn/'>Learn</a> / <a href='/en/learn/stereotypes/'>Stereo Type Annotations</a> / @ConnectionManager
+        <a href='/en/'>Narae.js</a> / <a href='/en/learn/'>Learn</a> / <a href='/en/learn/stereotypes/'>Stereo Types</a> / @ConnectionManager
     
 
     
@@ -540,7 +610,7 @@ a.no-color-anker:active {
         
         <span class="editpage">
             <svg class="icon code"><use xlink:href="#code"></use></svg>
-            <a href="https://github.com/naraejs/naraejs.org/edit/master/exampleSite/content/learn%5cstereotypes%5cconnection_manager%5c_index.en.md">
+            <a href="https://github.com/naraejs/naraejs.org/edit/master/content/learn%5cstereotypes%5cconnection_manager%5c_index.en.md">
                 Edit this page
             </a>
         </span>
@@ -567,16 +637,40 @@ a.no-color-anker:active {
     <span class="k">return</span> <span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">redis</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;;</span>
   <span class="p">}</span>
 
+  <span class="cm">/**
+</span><span class="cm">   * If false, the entire health check is not affected even if the health check fails.
+</span><span class="cm">   */</span>
   <span class="kr">public</span> <span class="kr">get</span> <span class="nx">essential</span><span class="p">()</span><span class="o">:</span> <span class="kr">boolean</span> <span class="p">{</span>
     <span class="c1">// false이면 해당 ConnectionManager의 Health가 DOWN이라도
 </span><span class="c1"></span>    <span class="c1">// 전체 Health Check에서 DOWN을 반환하진 않습니다.
 </span><span class="c1"></span>    <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
   <span class="p">}</span>
-
+  
+  <span class="cm">/**
+</span><span class="cm">   * If true, transactions are automatically processed when Transactional Annotation is set.
+</span><span class="cm">   */</span>
+  <span class="kr">public</span> <span class="kr">get</span> <span class="nx">transactional</span><span class="p">()</span><span class="o">:</span> <span class="kr">boolean</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>  <span class="c1">// transaction supported
+</span><span class="c1"></span>    <span class="k">return</span> <span class="kc">false</span><span class="p">;</span> <span class="c1">// transaction not supported
+</span><span class="c1"></span>  <span class="p">}</span>
+  
+  <span class="cm">/**
+</span><span class="cm">   * If successful, resolve the Promise and return details.
+</span><span class="cm">   * If failure, reject the Promise. see {@link IHealthCheckError}
+</span><span class="cm">   */</span>
   <span class="kr">public</span> <span class="nx">healthCheck</span><span class="p">()</span><span class="o">:</span> <span class="nx">Promise</span><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="kt">any</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
     <span class="k">return</span> <span class="nx">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">();</span> <span class="c1">// Health is UP
 </span><span class="c1"></span>    <span class="c1">// or
 </span><span class="c1"></span>    <span class="k">return</span> <span class="nx">Promise</span><span class="p">.</span><span class="nx">reject</span><span class="p">(...);</span> <span class="c1">// Health is DOWN
+</span><span class="c1"></span>  <span class="p">}</span>
+
+  <span class="cm">/**
+</span><span class="cm">   * TransactionalConnection
+</span><span class="cm">   *
+</span><span class="cm">   * If transactional is set, must implement {@link ITransactionalConnection}
+</span><span class="cm">   */</span>
+  <span class="kr">public</span> <span class="nx">getConnection</span><span class="p">()</span><span class="o">:</span> <span class="nx">Promise</span><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="nx">TConnection</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
+    <span class="c1">// ...
 </span><span class="c1"></span>  <span class="p">}</span>
 <span class="p">}</span>
 
@@ -665,7 +759,7 @@ a.no-color-anker:active {
 
 
 
-<script defer src="/js/en.search.min.f9cb76cd4f159b93556b3daad0e74dba2f0c78ff30ff6fe755dc9ffa9c28f165.js"></script>
+<script defer src="/js/en.search.min.12d640128dd6f7b8bc1e5fb859e5907f9185f377dee78f1799ab32e1c6b8437a.js"></script>
 
 
 

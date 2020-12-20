@@ -6,7 +6,25 @@
     <description>Recent content in Categories on Narae.js</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 05 Dec 2020 02:53:00 +0900</lastBuildDate><atom:link href="https://naraejs.org/ko/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 02:53:00 +0900</lastBuildDate><atom:link href="https://naraejs.org/ko/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ConnectionManager</title>
+      <link>https://naraejs.org/ko/categories/ConnectionManager/</link>
+      <pubDate>Sun, 20 Dec 2020 02:53:00 +0900</pubDate>
+      
+      <guid>https://naraejs.org/ko/categories/ConnectionManager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Logging</title>
+      <link>https://naraejs.org/ko/categories/Logging/</link>
+      <pubDate>Sun, 20 Dec 2020 02:53:00 +0900</pubDate>
+      
+      <guid>https://naraejs.org/ko/categories/Logging/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>EcoSystem</title>
       <link>https://naraejs.org/ko/categories/EcoSystem/</link>

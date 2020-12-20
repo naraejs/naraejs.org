@@ -47,7 +47,7 @@ Usage import { installer, Configuration } from &amp;amp;#39;@naraejs/core&amp;am
       
       <guid>https://naraejs.org/en/learn/stereotypes/connection_manager/</guid>
       <description>This page has not yet been translated.
-Usage import { installer, ConnectionManager, IConnectionManagerHandler } from &amp;amp;#39;@naraejs/core&amp;amp;#39; @ConnectionManager() class RedisConnectionManager implements IConnectionManagerHandler { public get name(): string { return &amp;amp;#39;redis&amp;amp;#39;; } public get essential(): boolean { // false이면 해당 ConnectionManager의 Health가 DOWN이라도  // 전체 Health Check에서 DOWN을 반환하진 않습니다.  return true; } public healthCheck(): Promise&amp;amp;lt;any&amp;amp;gt; { return Promise.resolve(); // Health is UP  // or  return Promise.reject(...); // Health is DOWN  } } export default installer; </description>
+Usage import { installer, ConnectionManager, IConnectionManagerHandler } from &amp;amp;#39;@naraejs/core&amp;amp;#39; @ConnectionManager() class RedisConnectionManager implements IConnectionManagerHandler { public get name(): string { return &amp;amp;#39;redis&amp;amp;#39;; } /** * If false, the entire health check is not affected even if the health check fails. */ public get essential(): boolean { // false이면 해당 ConnectionManager의 Health가 DOWN이라도  // 전체 Health Check에서 DOWN을 반환하진 않습니다.  return true; } /** * If true, transactions are automatically processed when Transactional Annotation is set.</description>
     </item>
     
     <item>

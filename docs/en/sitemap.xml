@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://naraejs.org/en/learn/stereotypes/connection_manager/transaction/</loc>
+    <lastmod>2020-12-20T02:53:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://naraejs.org/ko/learn/stereotypes/connection_manager/transaction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://naraejs.org/en/learn/stereotypes/connection_manager/transaction/"
+                />
+  </url>
+  
+  <url>
     <loc>https://naraejs.org/en/learn/stereotypes/component/</loc>
     <lastmod>2020-12-05T02:53:00+09:00</lastmod>
     <xhtml:link
@@ -59,6 +74,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://naraejs.org/en/learn/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://naraejs.org/en/learn/logging/</loc>
+    <lastmod>2020-12-20T02:53:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://naraejs.org/ko/learn/logging/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://naraejs.org/en/learn/logging/"
                 />
   </url>
   
@@ -199,7 +229,7 @@
   
   <url>
     <loc>https://naraejs.org/en/categories/</loc>
-    <lastmod>2020-12-05T02:53:00+09:00</lastmod>
+    <lastmod>2020-12-20T02:53:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -209,6 +239,36 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://naraejs.org/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://naraejs.org/en/categories/ConnectionManager/</loc>
+    <lastmod>2020-12-20T02:53:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://naraejs.org/ko/categories/ConnectionManager/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://naraejs.org/en/categories/ConnectionManager/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://naraejs.org/en/categories/Logging/</loc>
+    <lastmod>2020-12-20T02:53:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://naraejs.org/ko/categories/Logging/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://naraejs.org/en/categories/Logging/"
                 />
   </url>
   

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Logging on Narae.js</title>
+    <link>https://naraejs.org/en/categories/Logging/</link>
+    <description>Recent content in Logging on Narae.js</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 20 Dec 2020 02:53:00 +0900</lastBuildDate><atom:link href="https://naraejs.org/en/categories/Logging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Logging</title>
+      <link>https://naraejs.org/en/learn/logging/</link>
+      <pubDate>Sun, 20 Dec 2020 02:53:00 +0900</pubDate>
+      
+      <guid>https://naraejs.org/en/learn/logging/</guid>
+      <description>This page has not yet been translated.
+Simple Logging Facade 클래스에 @Slf 어노테이션을 적용하면 this.log 를 통해 Logger에 접근 가능하다.
+Example:
+@Slf({ namespace: &amp;amp;#39;your.namespace&amp;amp;#39; // Optional }) class SampleComponent implements Slfable { public log!: LoggerLike; public method() { this.log.info(&amp;amp;#39;...&amp;amp;#39;); } } </description>
+    </item>
+    
+  </channel>
+</rss>

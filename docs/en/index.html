@@ -39,6 +39,18 @@
 
 <script src="/js/vue.min.js"></script>
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZN3E8CRZVK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZN3E8CRZVK');
+</script>
+
+
+
 <style>
 .no-color-anker a {
   color: inherit;
@@ -148,7 +160,7 @@ a.no-color-anker:active {
             
                 <span class="flex">
                     <a href="/en/learn/stereotypes/" class="gdoc-nav__entry ">
-                        Stereo Type Annotations
+                        Stereo Types
                     </a>
                 </span>
             
@@ -256,6 +268,39 @@ a.no-color-anker:active {
             
 
             
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/en/learn/stereotypes/connection_manager/transaction/" class="gdoc-nav__entry ">
+                        Transaction
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
             </li>
             
             
@@ -286,6 +331,31 @@ a.no-color-anker:active {
             
         
     </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/en/learn/logging/" class="gdoc-nav__entry ">
+                        Logging
+                    </a>
+                </span>
+            
+            
 
             
             </li>
@@ -520,7 +590,7 @@ a.no-color-anker:active {
         
         <span class="editpage">
             <svg class="icon code"><use xlink:href="#code"></use></svg>
-            <a href="https://github.com/naraejs/naraejs.org/edit/master/exampleSite/content/_index.en.md">
+            <a href="https://github.com/naraejs/naraejs.org/edit/master/content/_index.en.md">
                 Edit this page
             </a>
         </span>
@@ -538,26 +608,23 @@ a.no-color-anker:active {
 
 
 <p>narae.js is a node.js open source framework based on <a href="https://github.com/jc-lab/bean.ts">bean.ts</a> for the purpose of control inversion (IoC),</p>
-<h1 id="readme-languages">README Languages</h1>
-<ul>
-<li>English (this)</li>
-<li><a href="README.ko.md">Korean</a></li>
-</ul>
 <h1 id="name">Name</h1>
 <p>&ldquo;Narae&rdquo; is a literary expression in pure Korean, meaning &ldquo;wing&rdquo;. It gives wings to developing by reducing unnecessary development and allowing more focus on business logic.</p>
 <div class="gdoc-page__anchorwrap"><h2 id="installation">Installation<a data-clipboard-text="https://naraejs.org/en/#installation" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Installation" href="#installation"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ npm install --save @naraejs/core
 </code></pre></div><h1 id="features">Features</h1>
-<div class="gdoc-page__anchorwrap"><h2 id="dependency-injection">Dependency Injection<a data-clipboard-text="https://naraejs.org/en/#dependency-injection" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Dependency Injection" href="#dependency-injection"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<p>= <strong>DI</strong></p>
-<p>Dependency injection is supported through bean.ts.</p>
-<div class="gdoc-page__anchorwrap"><h2 id="inversion-of-control">Inversion of Control<a data-clipboard-text="https://naraejs.org/en/#inversion-of-control" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Inversion of Control" href="#inversion-of-control"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<p>= <strong>IoC</strong></p>
-<p><em>There are still many things that are not enough to say that it is a complete IoC.</em></p>
-<p>In the existing express-based software, the user has to implement the router directly, and when an error occurs in the handler, 500 errors do not occur and a response is not provided.
-In narae.js, a user can easily implement a handler through the @RequestMapping annotation without having to create a router.
-Also, catches and handles errors that occur in handlers for possible error occurrence situations.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="inversion-of-control-through-dependency-injection">Inversion of Control through dependency injection<a data-clipboard-text="https://naraejs.org/en/#inversion-of-control-through-dependency-injection" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Inversion of Control through dependency injection" href="#inversion-of-control-through-dependency-injection"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Implement DI through <a href="https://github.com/jc-lab/bean.ts">bean.ts</a> to implement IoC.
+For bean creation, refer to <a href="https://naraejs.org/en/learn/stereotypes/" title="Stereo Type Annotations">Stereo Type Annotations</a>.</p>
 <div class="gdoc-page__anchorwrap"><h2 id="aspect-oriented-programming">Aspect Oriented Programming<a data-clipboard-text="https://naraejs.org/en/#aspect-oriented-programming" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Aspect Oriented Programming" href="#aspect-oriented-programming"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>= <strong>AOP</strong></p>
+<p>Similar to Java&rsquo;s Annotation, AOP is achieved using Javascript&rsquo;s Decorator.</p>
+<p>AOP is supported through the following annotations:</p>
+<ul>
+<li>easy to use logger through <code>@Slf</code> annotation.</li>
+<li>automatically commit/rollback by designating transaction area through <code>@Transactional</code> annotation.</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h2 id="aspect-oriented-programming-1">Aspect Oriented Programming<a data-clipboard-text="https://naraejs.org/en/#aspect-oriented-programming-1" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Aspect Oriented Programming" href="#aspect-oriented-programming-1"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <p>= <strong>AOP</strong></p>
 <p>It supports AOP such as:</p>
 <ul>
@@ -650,7 +717,7 @@ Also, catches and handles errors that occur in handlers for possible error occur
 
 
 
-<script defer src="/js/en.search.min.f9cb76cd4f159b93556b3daad0e74dba2f0c78ff30ff6fe755dc9ffa9c28f165.js"></script>
+<script defer src="/js/en.search.min.12d640128dd6f7b8bc1e5fb859e5907f9185f377dee78f1799ab32e1c6b8437a.js"></script>
 
 
 
